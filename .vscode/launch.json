@@ -10,10 +10,11 @@
         
         {
             "type": "chrome"
+        
         ,
             "request": "launch",
             "name": "Open index.html",
-            "file": "z:\\DevWeb MKT DIG\\Alunos\\Rafael Luis Hernandes\\grand_motorsport\\index.html"
+            "file": "z:\\DevWeb MKT DIG (Sábado)\\Alunos\\Rafael Luis Hernandes\\grand_motorsport\\index.html"
         }
     ]
 }
