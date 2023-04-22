@@ -9,47 +9,60 @@
     <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
     <title>..:: grand_motorsport ::..</title>
 </head>
-<body> test space
+<body>
     <!-- Aula 15/04/2023 -->
     <!-- Inicio Menu Responsivo -->
     <header id="header">
-            <a id="logo" href="index.html"><img src="./img/logo.png" alt=""></a>
+            <a id="logo" href="index.html"><img src="./img/logo.png" alt="logo grand_motorsport"></a>
+        <nav id="nav"></nav>
+            <button aria-label="abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+            <span id="hamburger"></span> 
+            </button>
+            <ul id="menu"  role="menu">
+                <li><a class="linkMenu" href="index.html">home</a></li>
 
+                <li><a class="linkMenu" href="produtos.html">produtos</a></li>
+
+                <li><a class="linkMenu" href="streaming.html">#streaming</a></li>
+
+                <li><a class="linkMenu" href="contato.html">contato</a></li> 
+            </ul>
+        </nav>
    </header>
    <!-- fim do menu responsivo -->
 
     <!-- inicio corousel páguna principal -->
-    <div id="carouselExampleInterval" class="carousel slide" data-mb-ride="carousel">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active" data-mb-interval="50">
+            <div class="carousel-item active" data-bs-interval="3000">
                 <img
                 src="./img/carrousel_01.jpg"
                 class="d-block w=100"
                 alt="..."
                 />
             </div>
-            <div class="carousel-item" data-mb-interval="50">
+            <div class="carousel-item" data-bs-interval="3000">
                 <img
                 src="./img/carrousel_02.jpg"
                 class="d-block w=100"
                 alt="..."
                 />
             </div>
-            <div class="carousel-item" data-mb-interval="50">
+            <div class="carousel-item" data-bs-interval="3000">
                 <img
                 src="./img/carrousel_03.jpg"
                 class="d-block w=100"
                 alt="..."
                 />
             </div>
-            <div class="carousel-item" data-mb-interval="50">
+            <div class="carousel-item" data-bs-interval="3000">
                 <img
                 src="./img/carrousel_04.jpg"
                 class="d-block w=100"
                 alt="..."
                 />
             </div>
-            <div class="carousel-item" data-mb-interval="50">
+            <div class="carousel-item" data-bs-interval="3000">
                 <img
                 src="./img/carrousel_05.jpg"
                 class="d-block w=100"
@@ -61,9 +74,9 @@
 
             <button 
                 class="carousel-control-prev"
-                data-mb-target="#carouselExampleInterval"
+                data-bs-target="#carouselExampleInterval"
                 type="button"
-                data-mb-slide="prev"
+                data-bs-slide="prev"
                 > 
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -71,9 +84,9 @@
             </button> 
             <button 
                 class="carousel-control-next"
-                data-mb-target="#carouselExampleInterval"
+                data-bs-target="#carouselExampleInterval"
                 type="button"
-                data-mb-slide="next"
+                data-bs-slide="next"
                 > 
                 <span class="carousel-control-next-icon" aria-hidden="true">
 
