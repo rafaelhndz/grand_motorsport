@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Staatliches);
 /* aula 1 - 01/04/2023 */
 body, ul {
     margin: 0px;
@@ -6,7 +7,7 @@ body, ul {
 #header #menu a {
     color: #ffffff;
     text-decoration: none;
-    font-family: fantasy ;
+    font-family: Staatliches;
     text-transform: uppercase;
     font-size:  1.25em;
     transition: 0.3s;
@@ -37,7 +38,7 @@ body, ul {
 }
 #header {
     width: 100%;
-    position: fixed;
+    position: relative;
     z-index: 90;
     box-sizing: border-box;
     height: 70px;
@@ -46,6 +47,8 @@ body, ul {
     align-items: center;
     justify-content: space-between;
     background: #c70000;
+    box-shadow: 6px 6px 8px rgba(3, 3, 3, 0.562);
+    transition: 0.3s;
 }
 #menu {
     display: flex;
@@ -54,12 +57,28 @@ body, ul {
 }
 #btn-mobile {
     display: none;
-
 }
+/*
 #carouselExampleInterval {
     position: relative;
     z-index: 10;
     padding-top: 80px;
+}
+*/
+#carouselExampleInterval {
+    position: relative;
+    z-index: 10;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 6px 6px 8px rgb(128, 128, 128);
+    transition: 0.3s;
+    place-items: normal legacy;
+    margin-block: 10px;
+    height: auto;
+}
+#carouselExampleInterval .carousel-inner img {
+    max-height: 950x;
+    width: 100%;
 }
 /* Estilo CSS Banner */
 .section-banner-home {
@@ -80,19 +99,30 @@ body, ul {
     width: 60%;
     font-weight: 500;
     padding-bottom: 20px;
+    color: white;
 }
 .section-banner-home .texto-banner p {
     font-size: 15px;
     margin-bottom: 20px;
 }
 .section-banner-home .texto-banner a {
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     background-color: rgb(134, 134, 134);
     padding: 4px 14px;
 }
+.section-banner-home .texto-banner a:hover {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px black;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #004ea7;
+    padding: 4px 14px;
+    font-size: 1.6em;
+    transition: 0.3s;
+    font-size: 1.6em;
+}
 /* fim CSS banner */
-
 /* CSS destaque */
 .destaque h2 {
     margin-top: 15px;
@@ -123,3 +153,67 @@ body, ul {
     margin: 30px 0;
 }
 /*fim destaque css*/
+
+/* CSS novidades */
+.novidades .textbody {
+    width: 80%;
+    margin: 70% auto;
+}
+.novidades h2 {
+    color: #0000007a;
+    font-size: 26px;
+    width: 70%;
+}
+.novidades p {
+    color: rgb(0, 0, 0);
+}
+.novidades a {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: violet;
+    padding: 6px 12px;
+    background-color: blue;
+    font-weight: 400;
+}
+/* fim CSS novidades*/
+/* inicio CSS galerias*/
+.galeria {
+    margin: 60px auto 20px;
+}
+.galeria h2 {
+    text-align: center;
+    font-size: 24px;
+}
+galeria p {
+    text-align: center;
+    width: 50%;
+    margin: 14px auto 50px;
+}
+.galeria .gallery {
+    width: 30%;
+    margin: 14px auto 50px;
+}
+/*Fim CSS galerias*/
+/* inicio CSS footer */
+.rodape {
+    padding: 50px 50px 0;
+}
+.rodape .info-contato p {
+    margin: 0px;
+}
+.rodape a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+.rodape a:hover {
+    font-weight: bold;
+}
+.rodape .redes-sociais img {
+    width: 45px;
+    height: 45px;
+}
+.rodape p.direitos {
+    text-align: center;
+    margin-top: 40px;
+}
