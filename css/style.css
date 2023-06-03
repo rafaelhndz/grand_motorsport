@@ -154,7 +154,10 @@ body, ul {
 }
 .section-banner-home img {
     height: 400px;
-}.section-banner-home .texto-banner {
+    width: 70%;
+    display: block;
+}
+.section-banner-home .texto-banner {
     margin-top: 30px;
     font-size: 22px;
 }
@@ -423,46 +426,50 @@ text-transform: uppercase;
     color: #004ea7;
     transition: all 0.5s ease 0s;
 
-} 
-/* inicio css whatsapp */
+} /* inicio css whatsapp */
 .whatsapp {
     position: fixed;
     z-index: 2;
     right: 20px;
     bottom: 100px;
 }
-/* inicio efeito pulse */
-.pulse   {
-    animation: pulse 0.7s infinite;
-    margin: 0 auto;
-    display: table;
-    margin-top: 50px;
-    animation-direction: alternate;
-    -webkit-animation-name: pulse;
-    animation-name: pulse;
-}
-@-webkit-keyframes pulse {
-    0% {
-        -webkit-transform: scale(1);
-        -webkit-filter: brightness(100%);
-    }
-    100% {
-        -webkit-transform: scale(1.1);
-        -webkit-filter: brightness(200%); 
-    }
-}
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-        filter: 100%;
-    }
-    100%{
-        transform: scale(1.1);
-        filter: 200%;
-    }
-}
-
+/* inicio efeito whats kick */
 .whatsapp img {
     height: 50px;
 }
-/* fim css whatsapp */
+.whatsapp .quica {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    animation: quica .4s cubic-bezier(.53, -0.03, .67, 1.06);
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes quica {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateY(100%);
+        width: 70px;
+        height: 40px;
+    }
+}
+/* fim css whats */
+.mask  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    background-attachment: fixed;
+}
+.overlay .mask {
+    opacity: 0;
+    transition: all .4s ease-in-out;
+}
+.overlay .mask:hover {
+    opacity: 1;
+}
